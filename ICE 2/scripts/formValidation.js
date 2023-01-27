@@ -76,17 +76,21 @@ submitRest.addEventListener('click', function(e) {
 })
    
 
-// Rest function for all error massages backgroud colors
+// Rest function for all error massages and change  backgroud colors to default
 function resetForm() {
 
-    // genErEl.innerHTML = '';
-    // usernameErrorEl.innerHTML = '';
+    // greate  username InputE1 & usernameErrorE1  by return Element(id) from html page
     let usernameInputEl = document.getElementById('usernameInput');
     let usernameErrorEl = document.getElementById('usernameError');
+    // change the bachgrod color of  user input box(RED) to Default one(White)
     usernameInputEl.style.backgroundColor = "#ffffff";
-    // genErEl = 
+    
+
+    // clear all error massages on the top and button of the box
     generalError.innerHTML = '';
     usernameErrorEl.innerHTML = '';
+
+    // change the background color of the page to white.
     backgroundColor = "#ffffff";
 
     
