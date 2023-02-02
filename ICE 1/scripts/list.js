@@ -32,7 +32,7 @@ let listItems = document.querySelectorAll('li');
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 let i;// Counter variable
 for(i=0; i < listItems.lenght; i++){// Loop through elements
-    listItems[i].className = 'cool'; // Change class to cool
+listItems[i].className = 'cool'; // Change class to cool
 }
     
 
