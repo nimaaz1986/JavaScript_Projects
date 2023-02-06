@@ -13,12 +13,7 @@ if(indexTile){
     indexTile.innerHTML = "This is My Home Page For WEBD6201 -WEB Client Site";
 }
 
-
-//let change = document.getElementsByClassName("nav-link").innerHTML;
-//if(change = "Products"){
-  //  change.innerHTML = "interest";
-//}
-
+// change the Product link to linterests
 document.getElementById("level02").innerHTML = "Interests";
 
 
@@ -50,7 +45,7 @@ if (submitButton){
 
 
 
-// Create  array variable for books 
+// Create  array variable for books in interests page
 let book1 = {
   title: "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
   description: "Ta book on self-help by James Clear. It is a guide to getting better habits by making small changes over time. The main idea of the book is the idea of atomic habits These are habits that seem so small and insignificant that they don't seem to matter, but over time, they add up to make big changes. The author talks about the science behind how habits form and gives steps for making habits that last. The book talks about things like setting goals, getting motivated, making decisions, and being productive. It tells people that they can reach their goals by making small, steady changes to their habits and routines."
@@ -68,12 +63,12 @@ let book3 = {
 
 
 
-// create the variable and if ir exists in the page this is excuted
+// create book1title and if ir exists in the page this is excuted
  let book1title = document.getElementById("book1Title")
  if(book1title){
     book1title.innerHTML = book1.title;
  }
-// create the variable and if ir exists in the page this is excuted
+// create book1book1Description and if ir exists in the page this is excuted
  let book1book1Description = document.getElementById("book1Description")
  if(book1book1Description){
     book1book1Description.innerHTML = book1.description;
@@ -162,13 +157,16 @@ AboutUsInfo();
 // Creating Human Resources in Java file
 
 // Get the ul element that holds the navbar links
-var navbarNav = document.querySelector(".navbar-nav");
+let navbarNav = document.querySelector(".navbar-nav");
 
 // Create the new li element for the Human Resources link
-var newLink = document.createElement("li");
+let newLink = document.createElement("li");
 newLink.innerHTML = `
   <a class="nav-link" href="human-resources.html">Human Resources</a>
 `;
+
+// the add method
+// its add "nav-item " to newly created "li"
 newLink.classList.add("nav-item");
 
 // Get the li element for the About Us link

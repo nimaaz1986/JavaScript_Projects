@@ -37,3 +37,7 @@ h2{
     font-size: 20px;
     color: rgb(184, 96, 113);
   }
+  #aboutUsImage {
+    display: block;
+    margin: 0 auto;
+}
