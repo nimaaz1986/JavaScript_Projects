@@ -1,0 +1,133 @@
+#login-form-wrap {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group1,
+.form-group2 {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+#create-account-wrap {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#create-account-wrap a {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.navbar {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  justify-content: flex-start;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-text .nav-link {
+  padding-left: 10px;
+}
+
+
+/* style the form container */
+#register-form-wrap {
+  margin: 50px auto;
+  max-width: 500px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* style the form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* style the error messages */
+.errorMessage {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* style the registration button */
+#btnRegSubmit {
+  margin-top: 20px;
+  width: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+
+#already-account-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+/*
+This CSS code styles a text input with a user icon as the background image, padding on the left side, and positioning the icon on the left side of the input.
+*/
+.form-group1 input[type="text"] {
+  padding-left: 30px;
+  background-image: url("../images/user-icon.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 20px 20px;
+  }
+
+.form-group2 input[type="password"] {
+  padding-left: 30px;
+  background-image: url("../images/lock-icon.png");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 20px 20px;
+  }
+  
