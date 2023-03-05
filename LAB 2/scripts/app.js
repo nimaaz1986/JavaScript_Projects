@@ -15,7 +15,7 @@ before the Login/Logout link and after the Contact Us link.
 */
 if ($("#btnLogin")){
 
-    // listen for form submission
+   //add a click function that calls a callack function
     $("#btnLogin").click(function (e){
       // prevent the default submit action (stay on the page)
       e.preventDefault(); 
@@ -26,14 +26,15 @@ if ($("#btnLogin")){
   
       // create new navbar link with username
       let newLink = $("<a>").text(username);
-
+      // adds the class "nav-link" to the new link created 
       newLink.addClass("nav-link");
   
       
-      // insert new link  after Contact Us and before "Login/Logout" link and
+      // Find the "Contact Us" link in the navbar
       let contactLink = $(".navbar-nav").find("a.nav-link:contains('Contact Us')");
       // Insert a new list item with class "nav-item" and append newLink to it, then insert it after the parent of contactLink.
       contactLink.parent().after($("<li>").addClass("nav-item").append(newLink));
+
       // clear form inputs
       $("#username").val("");
       $("#InputPassword").val("");
@@ -71,6 +72,7 @@ if ($("#btnRegSubmit")) {
 
     // Using the formValidation module, validate the first name input value and store any error messages in the firstNameError variable.
     let firstNameError = formValidation.validateFirstName(unvalidated_user.firstName);
+    //console.log("firstNameError:", firstNameError);
     
         // Using the formValidation module, validate the last name input value and store any error messages in the lastNameError variable
     let lastNameError = formValidation.validateLastName(unvalidated_user.lastName);
