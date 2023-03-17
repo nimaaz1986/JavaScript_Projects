@@ -15,7 +15,7 @@ $(document).ready(function() {
     // Find the first .nav-item that is a child of the navbarNav element
     let homeItem = navbarNav.find('.nav-item:first-child');
      // Find the last .nav-item that is a child of the navbarNav element
-    //var contactItem = navbarNav.find('.nav-item:last-child');
+    //let contactItem = navbarNav.find('.nav-item:last-child');
     
 
     // Create a new li element with class .nav-item
