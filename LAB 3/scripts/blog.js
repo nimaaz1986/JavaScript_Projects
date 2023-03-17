@@ -1,3 +1,12 @@
+/*
+Name : Nima Azadikhah
+Stident Baner: 100834828
+Date: 17 March 2023
+
+*/
+
+
+
 console.log('blog.js loaded')
 //It ensures that the code inside the function will run only when the DOM is fully loaded.
 $(document).ready(function() {
@@ -81,7 +90,7 @@ $(document).ready(function() {
         blogColumn.append(blogPost);
       }
     
-      // Add the Flexbox properties to the blogColumn element
+      // Add the Flexbox properties to the blogColumn element, using the resource(https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
       blogColumn.css({
         'display': 'flex',
         'flex-wrap': 'wrap',
