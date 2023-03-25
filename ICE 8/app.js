@@ -10,8 +10,8 @@ const app = express();
 
 // set up the express-Handlebars engine
 
-app.engine('handlebars', exphbs.engine({ defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
+app.engine('.hbs', exphbs.engine({ defaultLayout: 'main',extname: '.hbs', partialsDir: ''}));
+app.set('view engine', '.hbs');
 app.set('views', './views');
 
 // engage the middleware
