@@ -1,0 +1,56 @@
+<div class="card card-body">
+    <h3>edit Animal</h3>
+    <form action="/edit-animal/{{id}}" method="post">
+        <div class="form-group">
+            <label for="zoo">Zoo home</label>
+            <input type="text" name="zoo" id="zoo" value="{{animal.zoo}}" required>
+        </div>
+        <div class="form-group">
+            <label for="scientificName">scientific Name</label>
+            <input type="text" name="scientificName" id="scientificName" value="{{animal.scientificName}}" required>
+        </div>
+        <div class="form-group">
+            <label for="commonName">Common Name</label>
+            <input type="text" name="commonName" id="commonName" value="{{animal.commonName}}" required>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <div>
+                <label><input type="radio" name="gender" id="gendermale" value="Male" required>
+                    Male</label>
+            </div>
+            <div>
+                <label><input type="radio" name="gender" id="genderfemale" value="Female" required> Female</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" name="dateOfBirth" id="dateOfBirth" value="{{animal.dateOfBirth}}" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" value="{{animal.age}}" required>
+        </div>
+        <div class="form-group">
+            <label>Is Transportable</label>
+            <div>
+                <label>
+                    <input type="radio" name="isTransportable" id="isTransportableTrue" value="true" required>
+                    Yes
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="isTransportable" id="isTransportableFalse" value="false" required>
+                    No
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    <form action="/delete-animal/{{id}}" method="post">
+    <input type="hidden" name="hiddenInput"/>
+    <button type="submit" class="btn btn-danger">Delete Animal</button>
+    </form>
+    </form>
+
+</div>
